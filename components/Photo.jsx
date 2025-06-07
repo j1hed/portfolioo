@@ -23,7 +23,7 @@ const Photo = () => {
             className="w-[260px] h-[230px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
           >
             <Image
-              src="/assets/photo.png"
+              src="/assets/public/photo.png"
               priority
               quality={100}
               fill
@@ -51,7 +51,7 @@ const Photo = () => {
                 rotate: [120, 360],
               }}
               transition={{
-                duration: 20,
+                duration: 10,
                 repeat: Infinity,
                 repeatType: "reverse"
               }}

@@ -1,5 +1,6 @@
 "use client"; // Ensure this file is client-side rendered
 import Photo from "@/components/Photo";
+
 import { Button } from "@/components/ui/button"; // Import Button component
 import { FiDownload } from "react-icons/fi"; // Import download icon
 import Socials from "@/components/Socials"; // Import Socials component
