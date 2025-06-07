@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import photo from "@/../public/assets/photo.png"; // Static import
-
+import img from "../asset/photo.png";
 
 const Photo = () => {
   return (
@@ -25,7 +24,7 @@ const Photo = () => {
             className="w-[260px] h-[230px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
           >
             <Image
-              src={photo} // Use imported image
+              src={img} // Use imported image
               priority
               quality={100}
               fill
