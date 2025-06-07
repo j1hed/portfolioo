@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
 const Photo = () => {
   return (
     <section className="pt-4 pb-12 xl:pt-8 xl:pb-8">
@@ -23,7 +24,7 @@ const Photo = () => {
             className="w-[260px] h-[230px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
           >
             <Image
-              src="/assets/public/photo.png"
+              src="/assets/photo.png"
               priority
               quality={100}
               fill
