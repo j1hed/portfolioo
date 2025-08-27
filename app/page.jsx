@@ -1,15 +1,17 @@
 "use client"; // Ensure this file is client-side rendered
-import Photo from "@/components/Photo";
-
-import { Button } from "@/components/ui/button"; // Import Button component
+import Photo from "../components/Photo"; // Import Photo component
+import { Button } from "../components/ui/button"; // Import Button component
 import { FiDownload } from "react-icons/fi"; // Import download icon
-import Socials from "@/components/Socials"; // Import Socials component
-import Stats from "@/components/Stats";
-//import { metadata } from "./layout";
+import Socials from "../components/Socials"; // Import Socials component
+import Stats from "../components/Stats";
+//import BookingSection from "@/components/BookingSection"
+import { SplashCursor } from "@/components/SplashCursor";
 
+//import { metadata } from "./layout";
 export default function Home() {
   return (
-    <section className="h-full"> {/* Use h-screen for full viewport height and add background color */}
+    <section className="h-full">
+      <SplashCursor />
       <div className="container mx-auto h-full flex flex-col xl:flex-row items-center justify-between xl:p-1 xl:pb-17">
         
         {/* Text Section */}

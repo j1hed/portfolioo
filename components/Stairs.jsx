@@ -1,5 +1,4 @@
-import { animate, motion } from "framer-motion";
-import { delay } from "framer-motion";
+import { animate, motion } from "framer-motion"; 
 
 const stairAnimation = {
   initial: {

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-//
+
 const Header = () => {
   return (
     <header className="py-4 xl:py-8 text-white">

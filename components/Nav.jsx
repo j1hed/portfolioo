@@ -23,6 +23,10 @@ const links = [
     name: 'contact',
     path: '/contact',
   },
+  {
+  name: 'Have an idea?',
+  path: '/booking',
+},
 ];
 
 const Nav = () => {

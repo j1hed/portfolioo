@@ -8,7 +8,12 @@ import { cn } from "@/lib/utils";
 
 const Tabs = TabsPrimitive.Root;
 
-const TabsList = React.forwardRef(({ className, ...props }, ref) => (
+interface TabsListProps extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.List> {}
+
+const TabsList = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.List>,
+  TabsListProps
+>(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
     className={cn("inline-flex h-auto rounded-md p-1 text-primary", className)}
@@ -17,7 +22,12 @@ const TabsList = React.forwardRef(({ className, ...props }, ref) => (
 ));
 TabsList.displayName = TabsPrimitive.List.displayName;
 
-const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
+interface TabsTriggerProps extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> {}
+
+const TabsTrigger = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Trigger>,
+  TabsTriggerProps
+>(({ className, ...props }, ref) => (
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
@@ -29,7 +39,12 @@ const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
 ));
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 
-const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
+interface TabsContentProps extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content> {}
+
+const TabsContent = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Content>,
+  TabsContentProps
+>(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
