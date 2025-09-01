@@ -193,7 +193,7 @@ export default function BookingComponent() {
       
       <NeonScene />
       
-      <div className="grid lg:grid-cols-2 gap-12 animate-enter">
+      <div className="grid lg:grid-cols-2 gap-14 animate-enter">
         {/* Left: Pricing Section */}
         <div className="neon-card p-8 rounded-lg h-fit">
           <PricingComponent />
@@ -246,7 +246,7 @@ export default function BookingComponent() {
               </div>
 
               <div className="flex items-center justify-between border-t border-gray-700 pt-6 animate-fade-in">
-                <div className="text-sm text-gray-400">$20 / 45 min</div>
+                <div className="text-sm text-gray-400">$28 / 45 min</div>
                 <Button
                   variant="outline"
                   disabled={!date || !selected}
