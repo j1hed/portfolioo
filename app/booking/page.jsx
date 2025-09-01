@@ -2,7 +2,7 @@
 import React, { useRef } from "react"
 import { format } from "date-fns"
 import dynamic from "next/dynamic"
-import { useFrame } from "@react-three/fiber"
+import { useFrame ,Canvas } from "@react-three/fiber"
 import "@react-three/fiber"
 import PricingComponent from "./pricing"
 
